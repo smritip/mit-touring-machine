@@ -1,13 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="r0P-QR-vG8">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="jRq-kB-3hE">
+            <objects>
+                <navigationController id="r0P-QR-vG8" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mQK-I0-IQq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="73s-28-bzZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GeO-kn-K2f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-672" y="354"/>
+        </scene>
+        <!--Welcome to Stata!-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +32,389 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="stata_small.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="R4Y-vs-Rsx">
+                                <rect key="frame" x="160" y="117" width="280" height="161"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6J-6A-vpb">
+                                <rect key="frame" x="224" y="490" width="152" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Physical Tour"/>
+                                <connections>
+                                    <segue destination="hbq-7e-mUX" kind="push" id="O92-La-DEx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Era-wh-jJh">
+                                <rect key="frame" x="197" y="571" width="206" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Take a Virtual Tour!"/>
+                                <connections>
+                                    <segue destination="O61-pG-wdg" kind="push" id="exi-kr-agm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="(Must be in Stata)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kga-4a-C31">
+                                <rect key="frame" x="238" y="522" width="124" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.27787549083769636" green="0.27787549083769636" blue="0.27787549083769636" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88034387000000003" green="0.92222872779999998" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Era-wh-jJh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="96d-6R-ph3"/>
+                            <constraint firstItem="kga-4a-C31" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PRz-Kr-tBZ"/>
+                            <constraint firstItem="d6J-6A-vpb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b31-NK-LeP"/>
+                            <constraint firstItem="R4Y-vs-Rsx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d0l-Xn-3IS"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Welcome to Stata!" id="ToZ-a0-Sox">
+                        <barButtonItem key="backBarButtonItem" title="Home" id="U1M-qP-rxq"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="physicalTourButton" destination="d6J-6A-vpb" id="oaZ-oh-2dV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-13" y="354"/>
+        </scene>
+        <!--MIT-Stanford Video Camera-->
+        <scene sceneID="Vab-St-VBE">
+            <objects>
+                <viewController id="01c-Ms-tRI" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gxk-Fp-Vs9"/>
+                        <viewControllerLayoutGuide type="bottom" id="D7F-jS-syG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mkf-jK-d10">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="stanfordcam.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cPV-h6-W3r">
+                                <rect key="frame" x="215" y="91" width="170" height="235"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="es0-nY-Ncs">
+                                <rect key="frame" x="168" y="283" width="265" height="185"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">This historical video camera and this conferencing setup has allowed for MIT students to communicate with Stanford students for years! Stanford has its video camera in a cafe as well.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88034387000000003" green="0.92222872779999998" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="es0-nY-Ncs" firstAttribute="centerX" secondItem="mkf-jK-d10" secondAttribute="centerX" id="diD-M1-8EC"/>
+                            <constraint firstItem="cPV-h6-W3r" firstAttribute="centerX" secondItem="mkf-jK-d10" secondAttribute="centerX" id="mTE-hR-gDd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="MIT-Stanford Video Camera" prompt="Virtual Tour" id="mPt-Md-VTO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wrw-cY-wAC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-378" y="1054"/>
+        </scene>
+        <!--Physical Tour-->
+        <scene sceneID="Ieg-ZX-bSm">
+            <objects>
+                <viewController id="hbq-7e-mUX" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5ct-4N-IqU"/>
+                        <viewControllerLayoutGuide type="bottom" id="RAw-Vp-9Hl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qcC-6c-n8I">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Point your phone at an exhibit!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfY-zf-kMF">
+                                <rect key="frame" x="151" y="250" width="298" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d0Y-zm-7VE">
+                                <rect key="frame" x="233" y="482" width="134" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Learn more!"/>
+                                <connections>
+                                    <action selector="learnMorePressed:" destination="hbq-7e-mUX" eventType="touchUpInside" id="cee-K5-RWC"/>
+                                    <segue destination="IpT-La-4mh" kind="push" id="MTq-3Y-DoN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Had-vJ-5gV">
+                                <rect key="frame" x="207" y="111" width="187" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Update My Location!"/>
+                                <connections>
+                                    <action selector="updateMyLocation:" destination="hbq-7e-mUX" eventType="touchUpInside" id="g30-aA-oeh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Exhibit loading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bs1-zL-cFn">
+                                <rect key="frame" x="144" y="316" width="312" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88034387000000003" green="0.92222872779999998" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Had-vJ-5gV" firstAttribute="centerX" secondItem="qcC-6c-n8I" secondAttribute="centerX" id="Kkg-1r-5wD"/>
+                            <constraint firstItem="d0Y-zm-7VE" firstAttribute="centerX" secondItem="qcC-6c-n8I" secondAttribute="centerX" id="OhL-6w-MNM"/>
+                            <constraint firstItem="mfY-zf-kMF" firstAttribute="centerX" secondItem="qcC-6c-n8I" secondAttribute="centerX" id="Pnw-Ua-iAs"/>
+                            <constraint firstItem="bs1-zL-cFn" firstAttribute="centerX" secondItem="qcC-6c-n8I" secondAttribute="centerX" id="qz5-md-Tly"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Physical Tour" id="1Gi-MM-L2n"/>
+                    <connections>
+                        <outlet property="exhibitText" destination="bs1-zL-cFn" id="dxw-RK-f7O"/>
+                        <outlet property="learnMoreButton" destination="d0Y-zm-7VE" id="xz8-qy-4cF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7iE-7G-RbG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="679" y="83"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Z0u-ZM-dZz">
+            <objects>
+                <viewController id="IpT-La-4mh" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lcj-fz-caD"/>
+                        <viewControllerLayoutGuide type="bottom" id="fCJ-Hh-eZ4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4RZ-tk-I0b">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9TJ-Ff-7Zj">
+                                <rect key="frame" x="179" y="146" width="242" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="88D-7n-3lc">
+                                <rect key="frame" x="64" y="260" width="250" height="189"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88034387000000003" green="0.92222872779999998" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="9TJ-Ff-7Zj" firstAttribute="centerX" secondItem="4RZ-tk-I0b" secondAttribute="centerX" id="6a2-RO-fER"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="6Pj-D3-fqv"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="exhibitInfo" destination="88D-7n-3lc" id="rwh-m1-dAZ"/>
+                        <outlet property="exhibitName" destination="9TJ-Ff-7Zj" id="Xao-2v-bMa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NFk-d5-s8k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1322" y="89"/>
+        </scene>
+        <!--Click on the exhibits to learn more!-->
+        <scene sceneID="OMb-hY-52M">
+            <objects>
+                <viewController id="O61-pG-wdg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kyv-pL-EL1"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tvf-rq-Q3l"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rUa-Hr-ppd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cranes.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="iCl-tJ-3NP">
+                                <rect key="frame" x="124" y="450" width="128" height="141"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="firehydrant.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="CzX-S6-UWN">
+                                <rect key="frame" x="133" y="148" width="110" height="146"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="phonebooth.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xUJ-dh-aOq">
+                                <rect key="frame" x="257" y="274" width="111" height="142"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stanfordcam.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Lx1-Gd-yRw">
+                                <rect key="frame" x="4" y="274" width="122" height="142"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fire Hydrant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5E-BM-kNK">
+                                <rect key="frame" x="141" y="302" width="94" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phonebooth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uSO-Qz-ayh">
+                                <rect key="frame" x="265" y="424" width="94" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stanford Cam" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tR-5W-8jE">
+                                <rect key="frame" x="12" y="424" width="106" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pI2-lP-rED">
+                                <rect key="frame" x="148" y="148" width="85" height="146"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zMl-ah-I47" kind="push" id="dTF-kE-yJ9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgj-mh-t77">
+                                <rect key="frame" x="257" y="274" width="111" height="142"/>
+                                <connections>
+                                    <segue destination="bzA-f5-jxE" kind="push" id="wKj-Ed-hTq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzd-Ds-J64">
+                                <rect key="frame" x="136" y="450" width="104" height="140"/>
+                                <connections>
+                                    <segue destination="9ZO-r0-kMr" kind="push" id="zsI-bs-WaG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hW8-qd-44n">
+                                <rect key="frame" x="12" y="274" width="106" height="142"/>
+                                <connections>
+                                    <segue destination="01c-Ms-tRI" kind="push" id="KUX-Dk-72N"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cranes for Collier" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGV-Ih-0jq">
+                                <rect key="frame" x="114" y="598" width="149" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88034386999193415" green="0.92222872781298604" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Click on the exhibits to learn more!" prompt="Virtual Tour" id="bRW-ga-kBv">
+                        <barButtonItem key="backBarButtonItem" title="Virtual Tour" id="gmO-me-b4s"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zD8-wu-qRW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="649" y="778"/>
+        </scene>
+        <!--Fire Hydrant Hack!-->
+        <scene sceneID="mxp-ax-xBu">
+            <objects>
+                <viewController id="zMl-ah-I47" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u4z-vA-TWK"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jmd-OE-YIO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xvh-3a-bbb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="firehydrant_small.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="QXo-K1-HM0">
+                                <rect key="frame" x="258" y="93" width="85" height="128"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7EZ-Wz-eJf">
+                                <rect key="frame" x="168" y="241" width="265" height="279"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">A former MIT President once said, "Getting an Education from MIT is like taking a drink from a Fire Hose," a sentiment that many students share. In 1991, some hackers brought this simile to life by turning the fire hydrant into a drinking fountain, right outside 26-100!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88034387000000003" green="0.92222872779999998" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="7EZ-Wz-eJf" firstAttribute="centerX" secondItem="Xvh-3a-bbb" secondAttribute="centerX" id="UpQ-Yu-as6"/>
+                            <constraint firstItem="QXo-K1-HM0" firstAttribute="centerX" secondItem="Xvh-3a-bbb" secondAttribute="centerX" id="bHQ-Id-TOc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Fire Hydrant Hack!" prompt="Virtual Tour" id="VtM-wi-mpa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QPZ-cj-R2o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1308" y="778"/>
+        </scene>
+        <!--Cranes for Collier-->
+        <scene sceneID="v0s-UH-ma1">
+            <objects>
+                <viewController id="9ZO-r0-kMr" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QKW-CJ-K7Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="oBd-in-JAa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4g8-Ce-qXB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="cranes.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="8l4-xW-aqf">
+                                <rect key="frame" x="242" y="95" width="117" height="128"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="79x-Xl-2SH">
+                                <rect key="frame" x="168" y="257" width="265" height="207"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Officer Collier lost his life protecting our campus in April 2013. A year later, the MIT community came together to install this hack to honor Officer Collier. More than five thousand cranes were made.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88034387000000003" green="0.92222872779999998" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="79x-Xl-2SH" firstAttribute="centerX" secondItem="4g8-Ce-qXB" secondAttribute="centerX" id="gEK-ER-7s4"/>
+                            <constraint firstItem="8l4-xW-aqf" firstAttribute="centerX" secondItem="4g8-Ce-qXB" secondAttribute="centerX" id="lRr-Vq-p4a"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cranes for Collier" prompt="Virtual Tour" id="z0i-Lf-puK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ylt-KP-wcC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="300" y="1460"/>
+        </scene>
+        <!--Phonebooth-->
+        <scene sceneID="Gto-fQ-tVm">
+            <objects>
+                <viewController id="bzA-f5-jxE" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="f7l-d0-SSN"/>
+                        <viewControllerLayoutGuide type="bottom" id="mqf-Kz-h4w"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tmr-Cg-4ML">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="phonebooth_small.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="8bi-P0-bMw">
+                                <rect key="frame" x="270" y="92" width="114" height="128"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="VT4-kr-vmJ">
+                                <rect key="frame" x="168" y="291" width="265" height="161"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">This bright red phone booth lives right by the Gate tower elevators. Step inside and you will find that there is room for one to work, relax, watch tv, or even sleep!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88034387000000003" green="0.92222872779999998" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="8bi-P0-bMw" firstAttribute="centerX" secondItem="tmr-Cg-4ML" secondAttribute="centerX" id="LF5-U3-eug"/>
+                            <constraint firstItem="VT4-kr-vmJ" firstAttribute="centerX" secondItem="tmr-Cg-4ML" secondAttribute="centerX" id="TsJ-0L-Nwb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Phonebooth" prompt="Virtual Tour" id="Y5N-n3-7Ou"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nsz-92-1Kb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="978" y="1468"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cranes.jpg" width="2448" height="3264"/>
+        <image name="firehydrant.jpg" width="1433" height="2480"/>
+        <image name="firehydrant_small.jpg" width="688" height="1165"/>
+        <image name="phonebooth.jpg" width="2448" height="3264"/>
+        <image name="phonebooth_small.jpg" width="1826" height="2462"/>
+        <image name="stanfordcam.jpg" width="2448" height="3264"/>
+        <image name="stata_small.jpg" width="500" height="336"/>
+    </resources>
 </document>

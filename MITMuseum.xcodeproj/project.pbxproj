@@ -14,6 +14,15 @@
 		F20AE7961CD84FEB009FD0C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20AE7951CD84FEB009FD0C2 /* Assets.xcassets */; };
 		F20AE7991CD84FEB009FD0C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F20AE7971CD84FEB009FD0C2 /* LaunchScreen.storyboard */; };
 		F20AE7A41CD84FEB009FD0C2 /* MITMuseumTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F20AE7A31CD84FEB009FD0C2 /* MITMuseumTests.m */; };
+		F20AE7AF1CD85092009FD0C2 /* stata.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F20AE7AE1CD85092009FD0C2 /* stata.jpg */; };
+		F26544691CE26E5900728E85 /* cranes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F26544681CE26E5900728E85 /* cranes.jpg */; };
+		F265446B1CE26EA500728E85 /* cranes_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F265446A1CE26EA500728E85 /* cranes_small.jpg */; };
+		F265446D1CE26F4F00728E85 /* firehydrant.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F265446C1CE26F4F00728E85 /* firehydrant.jpg */; };
+		F265446F1CE26F5400728E85 /* phonebooth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F265446E1CE26F5400728E85 /* phonebooth.jpg */; };
+		F26544731CE2702500728E85 /* stanfordcam.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F26544721CE2702500728E85 /* stanfordcam.jpg */; };
+		F289BA341CE302D600C44B3A /* phonebooth_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F289BA331CE302D600C44B3A /* phonebooth_small.jpg */; };
+		F289BA361CE303E900C44B3A /* firehydrant_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F289BA351CE303E900C44B3A /* firehydrant_small.jpg */; };
+		F2A66A111CD8524B00ED4EC7 /* stata_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F2A66A101CD8524B00ED4EC7 /* stata_small.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F20AE7861CD84FEB009FD0C2 /* MITMuseum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MITMuseum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F20AE7861CD84FEB009FD0C2 /* T(o)uring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "T(o)uring.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F20AE78A1CD84FEB009FD0C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F20AE78C1CD84FEB009FD0C2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F20AE78D1CD84FEB009FD0C2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -40,6 +49,15 @@
 		F20AE79F1CD84FEB009FD0C2 /* MITMuseumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MITMuseumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F20AE7A31CD84FEB009FD0C2 /* MITMuseumTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MITMuseumTests.m; sourceTree = "<group>"; };
 		F20AE7A51CD84FEB009FD0C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F20AE7AE1CD85092009FD0C2 /* stata.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stata.jpg; sourceTree = "<group>"; };
+		F26544681CE26E5900728E85 /* cranes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cranes.jpg; sourceTree = "<group>"; };
+		F265446A1CE26EA500728E85 /* cranes_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cranes_small.jpg; sourceTree = "<group>"; };
+		F265446C1CE26F4F00728E85 /* firehydrant.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = firehydrant.jpg; sourceTree = "<group>"; };
+		F265446E1CE26F5400728E85 /* phonebooth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = phonebooth.jpg; sourceTree = "<group>"; };
+		F26544721CE2702500728E85 /* stanfordcam.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stanfordcam.jpg; sourceTree = "<group>"; };
+		F289BA331CE302D600C44B3A /* phonebooth_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = phonebooth_small.jpg; sourceTree = "<group>"; };
+		F289BA351CE303E900C44B3A /* firehydrant_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = firehydrant_small.jpg; sourceTree = "<group>"; };
+		F2A66A101CD8524B00ED4EC7 /* stata_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stata_small.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +90,7 @@
 		F20AE7871CD84FEB009FD0C2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F20AE7861CD84FEB009FD0C2 /* MITMuseum.app */,
+				F20AE7861CD84FEB009FD0C2 /* T(o)uring.app */,
 				F20AE79F1CD84FEB009FD0C2 /* MITMuseumTests.xctest */,
 			);
 			name = Products;
@@ -89,6 +107,15 @@
 				F20AE7951CD84FEB009FD0C2 /* Assets.xcassets */,
 				F20AE7971CD84FEB009FD0C2 /* LaunchScreen.storyboard */,
 				F20AE79A1CD84FEB009FD0C2 /* Info.plist */,
+				F20AE7AE1CD85092009FD0C2 /* stata.jpg */,
+				F2A66A101CD8524B00ED4EC7 /* stata_small.jpg */,
+				F26544681CE26E5900728E85 /* cranes.jpg */,
+				F265446A1CE26EA500728E85 /* cranes_small.jpg */,
+				F265446C1CE26F4F00728E85 /* firehydrant.jpg */,
+				F265446E1CE26F5400728E85 /* phonebooth.jpg */,
+				F26544721CE2702500728E85 /* stanfordcam.jpg */,
+				F289BA331CE302D600C44B3A /* phonebooth_small.jpg */,
+				F289BA351CE303E900C44B3A /* firehydrant_small.jpg */,
 				F20AE7891CD84FEB009FD0C2 /* Supporting Files */,
 			);
 			path = MITMuseum;
@@ -128,7 +155,7 @@
 			);
 			name = MITMuseum;
 			productName = MITMuseum;
-			productReference = F20AE7861CD84FEB009FD0C2 /* MITMuseum.app */;
+			productReference = F20AE7861CD84FEB009FD0C2 /* T(o)uring.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F20AE79E1CD84FEB009FD0C2 /* MITMuseumTests */ = {
@@ -193,8 +220,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F289BA361CE303E900C44B3A /* firehydrant_small.jpg in Resources */,
 				F20AE7991CD84FEB009FD0C2 /* LaunchScreen.storyboard in Resources */,
+				F265446F1CE26F5400728E85 /* phonebooth.jpg in Resources */,
+				F20AE7AF1CD85092009FD0C2 /* stata.jpg in Resources */,
 				F20AE7961CD84FEB009FD0C2 /* Assets.xcassets in Resources */,
+				F26544691CE26E5900728E85 /* cranes.jpg in Resources */,
+				F265446B1CE26EA500728E85 /* cranes_small.jpg in Resources */,
+				F2A66A111CD8524B00ED4EC7 /* stata_small.jpg in Resources */,
+				F289BA341CE302D600C44B3A /* phonebooth_small.jpg in Resources */,
+				F265446D1CE26F4F00728E85 /* firehydrant.jpg in Resources */,
+				F26544731CE2702500728E85 /* stanfordcam.jpg in Resources */,
 				F20AE7941CD84FEB009FD0C2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,10 +379,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MITMuseum/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = SPNC.MITMuseum;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.mit.smriti;
+				PRODUCT_NAME = "T(o)uring";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -354,10 +393,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MITMuseum/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = SPNC.MITMuseum;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.mit.smriti;
+				PRODUCT_NAME = "T(o)uring";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -404,6 +446,7 @@
 				F20AE7AA1CD84FEB009FD0C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F20AE7AB1CD84FEB009FD0C2 /* Build configuration list for PBXNativeTarget "MITMuseumTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +455,7 @@
 				F20AE7AD1CD84FEB009FD0C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
